@@ -1,0 +1,242 @@
+/* GENERAL */
+html{
+    height: 100vh;
+    margin: 0;
+}
+body{
+    /* border: solid 1px red; */
+    margin: 0;
+    height: 100vh;
+}
+#title{
+    background-color: black;
+    color: white;
+    margin: 0 0 1rem;
+    padding: .5rem;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+
+}
+.Main{
+    /* border: solid 1px blue; */
+    height: 100vh;
+    width: 80%;
+    margin-left: 10%;
+    font-family: 'Fjalla One', sans-serif;
+}
+.ButtonDiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: .5rem;
+   
+}
+.Buttons{
+    margin: 0 .5rem 1rem;
+    padding: .7rem;
+    width: 5rem;
+    border: none;
+    background-color: rgb(169, 224, 80);
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    font-family: 'Lobster', cursive;
+    font-size: 1rem;
+
+}
+#itemDisplay{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 60%;
+    margin-left: 20%;
+    height: 150px;
+    /* border: solid 1px orange; */
+    
+}
+#itemDisplay>span{
+    text-align: center;
+    margin: .3rem;
+    font-weight: bold;
+    color: rgb(87, 87, 87);
+}
+#sum{
+    text-align: center;
+    margin: 0 0 1rem;
+}
+#sum>h2{
+    border-bottom: 1px solid darkgray;
+    margin: .5rem 0;
+    font-family: 'Lobster', cursive;
+}
+#total{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: rgb(240, 92, 6);
+    text-align: center;
+}
+
+/* EARNINGS AND SAVINGS */
+.Earnings{
+    /* border: 1px solid black; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+.Earnings>label{
+    margin: .5rem 0;
+}
+#earnings, #savings{
+    width: 50%;
+    margin: .5rem 0 .5rem 25%;
+    border: none;
+    text-align: center;
+    padding: .5rem 0;
+    font-size: 1.2rem;
+}
+.PromptWindow{
+    display: none;
+    position: fixed;
+    top: 30%;
+    flex-direction: column;
+    border: solid 1px rgb(69, 69, 70);
+    width: 80%;
+    margin-left: 10%;
+    padding: 1rem 0;
+    background-color:  rgb(124, 63, 126);
+    font-family: 'Fjalla One', sans-serif;
+    box-shadow: 6px 6px 8px 0px rgba(0,0,0,0.75);
+
+}
+#promptTitle{
+    text-align: center;
+    color: rgb(250, 246, 246);
+    margin: .5rem;
+    font-size: 1.3rem;
+}
+#billName{
+    color: rgb(3, 3, 3);
+}
+#inputCost{
+    width: 60%;
+    margin-left: 20%;
+    border: none;
+}
+.PromptButtons{
+    text-align: center;
+    margin: 1rem 0;
+}
+.PromptButton{
+    margin: .2rem;
+    padding: .7rem;
+    width: 5rem;
+    font-family: 'Lobster', cursive;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+}
+#ok{
+    background-color: rgb(255, 253, 253);
+}
+#cancel{
+    background-color: rgb(228, 53, 67);
+}
+
+.FinishDiv{
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 1rem;
+    text-align: center;
+}
+.FinishButtons{
+    
+    padding: .7rem;
+    width: 5rem;
+    border: none;
+    font-weight: bolder;
+    font-family: 'Lobster', cursive;
+    font-size: 1rem;
+    color: rgb(12, 12, 12);
+    font-weight: bolder;
+}
+#done{
+    
+    font-weight: bolder;
+    margin-right: 2rem;
+    background-color: rgb(124, 63, 126);
+}
+#refresh{
+    background-color: rgb(80, 79, 85);
+}
+/* DONE WINDOW */
+#doneWindow{
+    position: fixed;
+    top: 30%; 
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 230px;
+    background-color: rgb(123, 209, 200);
+    box-shadow: 6px 6px 8px 0px rgba(0,0,0,0.75);
+}
+#closeX{
+    width: 1rem;
+    margin: .2rem; 
+    margin-left: 90%;
+}
+#closeX>img{
+    width: 1rem;
+}
+#doneWindow>h1{
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    margin: .25rem 0;
+}
+#listofTotals{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+#listofTotals span{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.3rem;
+    margin: .25rem;
+}
+#leisure{
+    color: rgb(238, 62, 9);
+    font-weight: bolder;
+}
+
+.Links{
+    width: 60%;
+    margin: 1rem 0 1rem 20%;
+    display: flex;
+    border: 1px solid rgb(61, 71, 61);
+    height: 70px;
+}
+#linksCanvas{
+    text-align: center;
+    width: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+#linksCanvas a{
+    margin: .2rem .5rem;
+    /* display: none; */
+}
+#linksCanvas a>img{
+    width: 4rem;
+}
+.Links>a{
+    /* border: 1px solid red; */
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Arrow{
+    width: 2rem;
+    /* border: 1px solid rgb(92, 92, 1); */
+}

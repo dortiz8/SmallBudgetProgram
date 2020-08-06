@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Budget Program</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/smallScreen.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1 id="title">Budget Program</h1>
+    <!-- PROMPT WINDOW  -->
+    <div class="PromptWindow">
+            <h2 id="promptTitle">How much do you want to pay for the <b id="billName"></b> bill?</h2>
+            <input id="inputCost" type="number" placeholder="$0.00">
+            <div class="PromptButtons">
+                <button id="ok" class="PromptButton">OK</button>
+                <button id="cancel" class="PromptButton">CANCEL</button>
+            </div>
+    </div>
+        <!-- MAIN BUTTONS -->
+        <!-- <div id="doneWindow">
+            <a id="closeX"><img src="pics/icons8-x-100.png"></a>
+            <h1>Allocate Money</h1>
+            <div id="listofTotals">
+                <span>BILLS: $1200</span>
+                <span></span>
+                <span id="leisure">LEISURE: $700</span>
+            </div>
+        </div> -->
+    <div class="Main"> 
+        <div class="ButtonDiv">
+            <button type="button" class="Buttons" value="330">Car</button>
+            <button type="button" class="Buttons" value="200">Insurance</button>
+            <button type="button" class="Buttons" value="220">Food</button>
+            <button type="button" class="Buttons" value="130">Lot</button>
+            <button type="button" class="Buttons" value="260">Phone</button>
+            <button type="button" class="Buttons">Light</button>
+            <button type="button" class="Buttons">CCard</button>
+            <button type="button" class="Buttons">Misc</button>
+        </div>
+
+        <div id="itemDisplay">
+
+        </div>
+        <div id="sum">
+            <h2>Total</h2>
+            <span id="total">$0</span>
+        </div>
+        <div class="Earnings">
+            <label for="savings">How much did you get paid?</label>
+            <input type="number" name="earnings"id="earnings" placeholder="$0">
+        </div>
+        <div class="Earnings">
+            <label for="savings">How much do you want to allocate to savings?</label>
+            <input type="number" name="savings"id="savings" placeholder="$0">
+        </div>
+        <div class="FinishDiv">
+            <button  class="FinishButtons" id="done">Done</button>
+            <button  class="FinishButtons" id="refresh">Refresh</button>
+        </div>
+        <div class="Links">
+            <!-- <a><img src="pics/icons8-left-96.png" id="left" class="Arrow"></a> -->
+            <div id="linksCanvas">
+                <a><img src="pics/icons8-hamburger-100.png" id="food"></a>
+                <a><img src="pics/icons8-idea-bank-100.png" id="bank"></a>
+                <a><img src="pics/icons8-mastercard-credit-card-100.png" id="card"></a>
+                <a><img src="pics/icons8-lightning-bolt-100.png" id="light"></a>
+                <a><img src="pics/icons8-retro-tv-100.png" id="internet"></a>
+                <a><img src="pics/icons8-water-100.png" id="water"></a>
+                <a><img src="pics/icons8-car-100.png" id="car"></a>
+            </div>
+            <!-- <a><img src="pics/icons8-right-96.png" id="right" class="Arrow"></a> -->
+        </div>
+    </div>
+  
+       
+        
+
+  
+    <footer>
+        
+    </footer>
+   
+
+    <script src="program.js" type="module"></script>
+</body>
+
+</html>
